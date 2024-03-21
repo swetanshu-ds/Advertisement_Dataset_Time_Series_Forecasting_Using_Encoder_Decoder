@@ -1,0 +1,53 @@
+mongo queries
+
+1. or           			--   $or
+2. and          			--   $and
+3. less than				--   $lt
+4. less than equal to       		--  $lte
+5. greater than        			--   $gt
+6. greater than equal   		--   $gte
+7. like          		        --   \xyz\
+8. in  -                      		-- $in
+9. nor :- name!= "x" or age!= "y"          --  $nor
+10. not:-  name!="x" and age!= "22"		--  $not
+11. AND OR				--  
+12 find                                 --  
+13.limit
+14.skip
+15. project - use for selecting the columns
+16. elemmatch
+17. distinct
+18. count
+19. match -used for checking the conditions , 
+20. unwind                                         --    seperating/splitting the array
+21.  			
+
+
+
+
+
+
+
+
+##### MongoDB aggregation framework #########
+
+input -> $project -> $match -> $group -> $sort -> output
+
+$count , $skip ,   $ $unwind
+
+
+
+db.users.aggregate([
+{stage 1}, $project
+   {stage 2} , $match
+      {stage 3} , $group
+	{stage 4}, $sort	])
+
+
+
+
+
+
+
+
+
